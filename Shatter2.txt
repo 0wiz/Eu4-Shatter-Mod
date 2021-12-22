@@ -1,0 +1,3 @@
+gamespeed 0
+run Shatter2_Logic.txt
+date 1444.11.11

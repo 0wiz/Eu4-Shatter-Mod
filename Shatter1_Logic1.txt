@@ -1,0 +1,51 @@
+# Add natives to decolonized provinces
+every_province = {
+    limit = {
+        province_id = 368
+        province_id = 367
+        province_id = 366
+    }
+    change_native_ferocity = 1
+    change_native_hostileness = 1
+    change_native_size = 10
+}
+
+# Make Riga a merchant republic
+every_country = {
+    limit = { tag = RIG }
+    change_government = republic
+    add_government_reform = merchants_reform
+}
+
+# Release existing subjects
+every_country = {
+    limit = { NOT = { culture_group = japanese } }
+    release_all_subjects = yes
+}
+
+# Release non-existing core countries with cores of primary culture 
+every_province = {
+    every_core_country = {
+        limit = { exists = no }
+        every_core_province = {
+            limit = {
+                owner = {
+                    num_of_owned_provinces_with = { 
+                        value = 2
+                        is_core = PREV
+                    }
+                }
+            }
+            owner = { remove_core = PREV }
+            cede_province = PREV
+            if = {
+                limit = { has_owner_culture = yes }
+                change_religion = owner
+            }
+            else = {
+                cede_province = previous_owner
+                owner = { add_core = PREV }
+            }
+        }
+    }
+}

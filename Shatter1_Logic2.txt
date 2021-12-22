@@ -1,0 +1,34 @@
+every_country = {
+    # Make Iceland & The Isles historical friends
+    if = { limit = { tag = ICE } add_historical_friend = LOI }
+    if = { limit = { tag = LOI } add_historical_friend = ICE }
+}
+
+# Randomize new 30y old rulers and roll for new 5y old heirs
+every_country = {
+    define_heir = {
+        fixed = no
+        max_random_adm = 6
+        max_random_dip = 6
+        max_random_mil = 6
+        claim = 70
+        age = 30
+    }
+    kill_ruler = yes
+    random = {
+        chance = 80
+        define_heir = { age = 10 }
+    }
+    add_stability = 1
+}
+
+# Kill all units and return control of all provinces to their owners
+every_province = {
+    kill_units = { who = THIS }
+    kill_units = { who = enemy }
+    change_controller = owner
+}
+every_country = {
+    limit = { army_size = 1 }
+    every_province = { kill_units = { who = PREV } }
+}

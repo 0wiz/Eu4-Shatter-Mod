@@ -1,0 +1,992 @@
+observe
+
+# Decolonize West African Islands (Ordered by province)
+assimilate 366 SOS
+own 366
+remove_core 366 SOS
+remove_core 366 CAS
+change_religion 366 animism
+assimilate 367 SOS
+own 367
+remove_core 367 SOS
+remove_core 367 POR
+change_religion 367 animism
+assimilate 368 SOS
+own 368
+remove_core 368 SOS
+remove_core 368 POR
+change_religion 368 animism
+
+# Fix natives & release subjects & nations with primary culture cores
+run Shatter1_Logic1.txt
+
+
+
+#________________ Western Europe ________________#
+#################### Britain #####################
+assimilate 234 CRN
+remove_core 234 ENG
+assimilate 237 CRN
+remove_core 237 ENG
+assimilate 239 WLS
+remove_core 239 ENG
+assimilate 240 WLS
+remove_core 240 ENG
+own_core 243 NOL
+remove_core 243 ENG
+own_core 244 NOL
+remove_core 244 ENG
+assimilate 251 HSC
+remove_core 251 SCO
+remove_core 253 SCO
+assimilate 369 LOI
+remove_core 369 NOR
+assimilate 1861 WLS
+remove_core 1861 ENG
+remove_core 4364 SCO
+remove_core 4365 SCO
+assimilate 4130 CRN
+remove_core 4130 ENG
+assimilate 4371 CRN
+remove_core 4371 ENG
+assimilate 4372 WLS
+remove_core 4372 ENG
+assimilate 4373 CRN
+remove_core 4373 ENG
+assimilate 4374 CRN
+remove_core 4374 ENG
+assimilate 4375 WLS
+remove_core 4375 ENG
+assimilate 4376 WLS
+remove_core 4376 ENG
+
+
+################# Low Countries ##################
+# Nothing re-assigned here yet
+
+
+##################### France #####################
+assimilate 87 PIC
+remove_core 87 ENG
+assimilate 88 PIC
+remove_core 88 BUR
+remove_core 167 FRA
+remove_core 168 FRA
+assimilate 173 AMG
+remove_core 173 GUY
+remove_core 173 ENG
+remove_core 173 FRA
+remove_core 174 FRA
+own_core 175 AMG
+remove_core 175 GUY
+remove_core 175 ENG
+own_core 176 FOI
+remove_core 176 GUY
+own_core 177 ALE
+remove_core 177 ENG
+remove_core 177 FRA
+remove_core 177 PRO
+own_core 178 ALE
+remove_core 178 PRO
+own_core 180 BER
+remove_core 180 FRA
+own_core 198 AUV
+remove_core 198 TOU
+remove_core 198 AMG
+remove_core 198 GUY
+own_core 200 AVI
+remove_core 200 TOU
+own_core 205 DAU
+remove_core 205 SAV
+own_core 1877 NEV
+remove_core 1877 BUR
+remove_core 1879 FRA
+own_core 4111 BER
+remove_core 4111 FRA
+remove_core 4385 FRA
+own_core 4386 ALE
+remove_core 4386 FRA
+own_core 4387 BER
+remove_core 4387 ORL
+own 4389 ORL
+remove_core 4389 FRA
+own_core 4391 AUV
+remove_core 4391 TOU
+remove_core 4694 GUY
+own_core 4719 DAU
+remove_core 4719 SAV
+
+
+##################### Iberia #####################
+own_core 209 NAV
+remove_core 209 CAS
+own_core 215 ASU
+remove_core 215 CAS
+assimilate 218 ADU
+remove_core 218 CAS
+assimilate 221 GRA
+remove_core 221 CAS
+assimilate 224 ADU
+remove_core 224 CAS
+assimilate 225 ADU
+remove_core 225 CAS
+assimilate 231 GAL
+remove_core 231 POR
+assimilate 232 GAL
+remove_core 232 POR
+own_core 1746 ASU
+remove_core 1746 CAS
+assimilate 1748 ADU
+remove_core 1748 CAS
+assimilate 1749 ADU
+remove_core 1749 CAS
+assimilate 2754 ADU
+remove_core 2754 CAS
+assimilate 2755 NAV
+remove_core 2755 CAS
+assimilate 2989 NAV
+remove_core 2989 CAS
+assimilate 4547 ADU
+remove_core 4547 CAS
+assimilate 4548 ADU
+remove_core 4548 CAS
+own_core 4552 ASU
+remove_core 4552 CAS
+assimilate 4556 GAL
+remove_core 4556 POR
+own_core 4789 ASU
+remove_core 4789 CAS
+
+
+###################### Italy #####################
+own_core 120 PAP
+remove_core 120 NAP
+own_core 123 SIC
+remove_core 123 NAP
+remove_core 124 NAP
+remove_core 125 NAP
+own_core 126 JAI
+remove_core 126 ARA
+remove_core 126 NAP
+remove_core 126 SIC
+own_core 2978 ETR
+remove_core 2978 LAN
+remove_core 2982 NAP
+remove_core 4736 NAP
+remove_core 4737 NAP
+
+
+################## South Germany #################
+own_core 72 BAD
+remove_core 72 HAB
+own 129 CLI
+remove_core 129 HAB
+own_core 133 SLO
+remove_core 133 HAB
+own_core 134 SLO
+remove_core 134 HAB
+own_core 1757 MEI
+remove_core 1757 PAL
+own 1769 CLI
+remove_core 1769 HAB
+own_core 1770 SLO
+remove_core 1770 HAB
+own_core 1867 GNV
+remove_core 1867 SAV
+own_core 1871 GNV
+remove_core 1871 SAV
+own_core 1880 MLH
+remove_core 1880 HAB
+own_core 4738 AQU
+remove_core 4738 HAB
+own_core 4762 SLO
+remove_core 4762 HAB
+
+
+################## North Germany #################
+change_religion MEI catholic
+assimilate 267 MEI
+remove_core 267 BOH
+assimilate 1771 MEI
+remove_core 1771 BOH
+assimilate 2967 MEI
+remove_core 2967 BOH
+
+
+################### Scandinavia ##################
+change_religion SMI norse_pagan_reformed
+own_core 6 SWE
+remove_core 6 DAN
+assimilate 11 SMI
+remove_core 11 SWE
+assimilate 18 SMI
+remove_core 18 SWE
+own_core 26 SWE
+remove_core 26 DAN
+assimilate 27 FIN
+remove_core 27 SWE
+assimilate 315 SMI
+remove_core 315 NOR
+assimilate 1777 SMI
+remove_core 1777 NOV
+own_core 1930 NSS
+remove_core 1930 SWE
+assimilate 1978 LOI
+remove_core 1978 NOR
+assimilate 1979 LOI
+remove_core 1979 NOR
+own_core 1981 PRY
+remove_core 1981 DAN
+own_core 1982 SWE
+remove_core 1982 DAN
+assimilate 4113 SMI
+remove_core 4113 SWE
+assimilate 4114 SMI
+remove_core 4114 SWE
+assimilate 4151 SMI
+remove_core 4151 SWE
+assimilate 4152 SMI
+remove_core 4152 SWE
+own_core 4164 NOR
+remove_core 4164 SWE
+own_core 4165 SWE
+remove_core 4165 DAN
+
+
+#________________ Eastern Europe ________________#
+##################### Russia #####################
+own_core 32 KRL
+remove_core 32 NOV
+own_core 33 KRL
+remove_core 33 NOV
+own_core 302 QAS
+remove_core 302 GOL
+own_core 304 QAS
+remove_core 304 KAZ
+own_core 307 RSO
+remove_core 307 MOS
+own_core 309 KRL
+remove_core 309 NOV
+assimilate 313 KRL
+remove_core 313 NOV
+own_core 314 BLO
+remove_core 314 NOV
+remove_core 314 MOS
+own 1752 TVE
+remove_core 1752 MOS
+own_core 1753 YAR
+remove_core 1753 MOS
+own 1754 NZH
+remove_core 1754 MOS
+assimilate 1776 SMI
+remove_core 1776 KRL
+assimilate 1955 BLO
+remove_core 1955 NOV
+assimilate 1958 KRL
+remove_core 1958 NOV
+own_core 2415 QAS
+remove_core 2415 GOL
+own_core 4117 YAR
+remove_core 4117 MOS
+assimilate 4122 BLO
+remove_core 4122 NOV
+own_core 4124 KRL
+remove_core 4124 NOV
+own_core 4148 PSK
+remove_core 4148 NOV
+own_core 4253 RSO
+remove_core 4253 MOS
+assimilate 4256 BLO
+remove_core 4256 NOV
+assimilate 4257 BLO
+remove_core 4257 NOV
+assimilate 4258 KRL
+remove_core 4258 NOV
+assimilate 4259 BLO
+remove_core 4259 NOV
+remove_core 4259 MOS
+own_core 4262 BLO
+remove_core 4262 MOS
+remove_core 4262 NOV
+own_core 4263 YAR
+remove_core 4263 MOS
+
+
+###################### Ural ######################
+own_core 303 AST
+remove_core 303 GOL
+own_core 305 BSH
+remove_core 305 KAZ
+own_core 473 AST
+remove_core 473 KAZ
+own_core 1079 PRM
+remove_core 1079 MOS
+own_core 1083 PRM
+remove_core 1083 MOS
+own_core 1755 PRM
+remove_core 1755 MOS
+remove_core 1755 NOV
+own_core 1957 YAR
+remove_core 1957 MOS
+own_core 1965 BSH
+remove_core 1965 NOG
+own_core 2419 AST
+remove_core 2419 KAZ
+remove_core 4129 NOV
+
+
+################### Pontic Step ##################
+own_core 464 KLM
+remove_core 464 AST
+own_core 466 KLM
+remove_core 466 AST
+own_core 468 KLM
+remove_core 468 AST
+own_core 2416 KLM
+remove_core 2416 AST
+own_core 2417 KLM
+remove_core 2417 AST
+
+
+#################### Ruthenia ####################
+# Nothing re-assigned here yet
+
+
+##################### Baltic #####################
+# Nothing re-assigned here yet
+
+
+##################### Poland #####################
+# Nothing re-assigned here yet
+
+
+#################### Carpathia ###################
+own_core 1952 TRA
+remove_core 1952 HUN
+
+
+##################### Balkans ####################
+remove_core 137 DAL
+own 143 ALB
+remove_core 143 TUR
+own_core 144 EPI
+remove_core 144 TUR
+remove_core 144 BYZ
+own_core 147 EPI
+remove_core 147 TUR
+remove_core 147 BYZ
+own_core 148 EPI
+remove_core 148 TUR
+remove_core 148 BYZ
+own 149 BYZ
+remove_core 149 TUR
+own_core 1853 EPI
+remove_core 1853 TUR
+remove_core 1853 BYZ
+own 3001 SER
+remove_core 3001 TUR
+own 4174 ALB
+remove_core 4174 VEN
+remove_core 4175 VEN
+remove_core 4175 TUR
+own_core 4698 EPI
+own_core 4699 EPI
+remove_core 4699 BYZ
+own_core 4702 EPI
+remove_core 4702 TUR
+remove_core 4702 BYZ
+own 4705 BYZ
+remove_core 4705 TUR
+remove_core 4750 TUR
+own 4779 BYZ
+remove_core 4779 TUR
+own 4780 SER
+remove_core 4780 TUR
+
+
+
+#____________________ Levant ____________________#
+#################### Anatolia ####################
+own_core 1848 MEN
+remove_core 1848 TUR
+
+
+#################### Mashriq #####################
+own_core 364 LEB
+remove_core 364 MAM
+own_core 379 LEB
+remove_core 379 MAM
+own_core 380 FAD
+remove_core 380 MAM
+assimilate 381 FAD
+remove_core 381 MAM
+assimilate 382 FAD
+remove_core 382 SYR
+own_core 1854 LEB
+remove_core 1854 MAM
+assimilate 2309 QAR
+remove_core 2309 IRQ
+
+
+##################### Arabia #####################
+own_core 383 ANZ
+remove_core 383 MAM
+own_core 2327 ANZ
+remove_core 2327 MAM
+own_core 2333 SHR
+remove_core 2333 ORM
+own_core 4268 ANZ
+remove_core 4268 MAM
+own_core 4269 ANZ
+remove_core 4269 MAM
+
+
+##################### Egypt ######################
+own_core 356 EGY
+remove_core 356 MAM
+own_core 357 EGY
+remove_core 357 MAM
+own_core 358 EGY
+remove_core 358 MAM
+own_core 361 EGY
+remove_core 361 MAM
+own_core 362 EGY
+remove_core 362 MAM
+own_core 363 EGY
+remove_core 363 MAM
+own_core 365 ANZ
+remove_core 365 MAM
+own_core 1233 EGY
+remove_core 1233 MAM
+own_core 2316 EGY
+remove_core 2316 MAM
+own_core 2318 EGY
+remove_core 2318 MAM
+own_core 2325 EGY
+remove_core 2325 MAM
+own_core 2326 EGY
+remove_core 2326 MAM
+own_core 4316 EGY
+remove_core 4316 MAM
+own_core 4317 EGY
+remove_core 4317 MAM
+own_core 4323 EGY
+remove_core 4323 MAM
+
+
+
+#_______________ Northern Africa ________________#
+#################### Maghreb #####################
+own_core 334 TET
+remove_core 334 MOR
+assimilate 335 TET
+remove_core 335 MOR
+own_core 340 KBA
+remove_core 340 TUN
+own_core 342 SLE
+remove_core 342 MOR
+remove_core 344 MOR
+remove_core 345 MOR
+remove_core 346 MOR
+remove_core 347 MOR
+remove_core 348 MOR
+assimilate 349 TFL
+remove_core 349 TLC
+assimilate 350 MZB
+assimilate 352 TGT
+remove_core 352 GHD
+remove_core 1110 MOR
+assimilate 1751 TET
+remove_core 1751 POR
+remove_core 1751 MOR
+own_core 1882 KBA
+remove_core 1882 TUN
+own_core 2450 FZA
+remove_core 2450 GHD
+own_core 2453 GHD
+remove_core 2453 TUN
+own_core 2454 GHD
+remove_core 2454 TUN
+assimilate 2458 KBA
+remove_core 2458 TUN
+remove_core 2460 MOR
+assimilate 2462 ALG
+remove_core 2462 TLC
+remove_core 2464 MOR
+remove_core 2466 MOR
+own_core 2468 FEZ
+remove_core 2468 MOR
+own_core 2469 SLE
+remove_core 2469 MOR
+remove_core 2470 MOR
+own_core 2472 MZB
+remove_core 2472 TGT
+own_core 4563 SLE
+remove_core 4563 MOR
+own_core 4564 SLE
+remove_core 4564 MOR
+own_core 4566 GHD
+remove_core 4566 TUN
+own_core 4568 MRK
+remove_core 4568 MOR
+
+
+############### Guinei/Niger/Sahel ###############
+assimilate 1120 KBU
+remove_core 1120 MAL
+assimilate 1123 SOF
+remove_core 1123 ZAF
+own_core 1138 ASH # Spawn Ashanti from uncolonized province
+own_core 2249 SOF
+remove_core 2249 MAL
+own_core 2250 SOF
+remove_core 2250 MAL
+own_core 2253 KNG
+remove_core 2253 MAL
+own_core 2263 JNN
+remove_core 2263 MSI
+
+
+################# Horn of Africa #################
+own_core 1209 MRE
+remove_core 1209 WAR
+assimilate 1208 OGD
+remove_core 1208 ADA
+assimilate 1210 OGD
+remove_core 1210 ADA
+assimilate 1223 BTI
+remove_core 1223 ETH
+assimilate 1224 BTI
+remove_core 1224 ETH
+own_core 1232 BEJ
+remove_core 1232 MAM
+own_core 2770 DAM
+remove_core 2770 ETH
+own_core 2776 GLE
+remove_core 2776 AJU
+own_core 2781 GLE
+remove_core 2781 AJU
+own_core 2792 MRE
+remove_core 2792 WAR
+
+
+
+#_______________ Southern Africa ________________#
+############### South/East Africa ################
+own_core 789 ZUL
+own_core 1181 ZUL
+own_core 1182 ZUL
+own_core 1183 ZUL
+own_core 1800 ZUL
+assimilate 1925 JIM
+own_core 2777 GLE
+remove_core 2777 AJU
+own_core 4022 BTS
+remove_core 4022 SKA
+change_religion LIB sunni
+own_core 4024 LIB
+remove_core 4024 BTS
+own_core 4025 ANT
+remove_core 4025 BTS
+own_core 4032 MFY
+remove_core 4032 SKA
+assimilate 4051 JIM
+assimilate 4052 JIM
+
+
+############# Central Africa/Kongo ###############
+own_core 798 NDO
+remove_core 798 KON
+own_core 1901 TYO
+remove_core 1901 KON
+own_core 4081 TYO
+remove_core 4081 KON
+
+
+
+#____________________ Persia ____________________#
+#################### Khorasan ####################
+remove_core 444 TIM
+remove_core 445 TIM
+remove_core 447 TIM
+remove_core 448 TIM
+remove_core 451 TIM
+remove_core 2226 TIM
+remove_core 2235 TIM
+remove_core 2236 TIM
+remove_core 2350 TIM
+assimilate 4334 YZD
+remove_core 4334 TIM
+remove_core 4334 KHO
+
+
+##################### Persia #####################
+remove_core 413 TIM
+remove_core 414 TIM
+remove_core 427 TIM
+remove_core 428 TIM
+remove_core 429 TIM
+remove_core 430 TIM
+own_core 431 KRM
+remove_core 431 TIM
+remove_core 431 ORM
+own 2209 LRI
+remove_core 2209 QAR
+remove_core 2210 TIM
+remove_core 2212 TIM
+remove_core 2213 TIM
+remove_core 2214 TIM
+remove_core 2215 TIM
+remove_core 2216 TIM
+remove_core 2216 KHO
+remove_core 2217 TIM
+remove_core 2218 TIM
+remove_core 2219 TIM
+own_core 2220 KRM
+remove_core 2220 TIM
+remove_core 2220 BAL
+remove_core 2222 KHO
+remove_core 2223 TIM
+remove_core 4171 TIM
+remove_core 4300 TIM
+own_core 4327 KRM
+remove_core 4327 TIM
+remove_core 4327 BAL
+remove_core 4329 TIM
+remove_core 4330 TIM
+remove_core 4331 TIM
+remove_core 4332 TIM
+remove_core 4335 TIM
+remove_core 4337 TIM
+remove_core 4338 TIM
+remove_core 4342 TIM
+
+
+#################### Caucasia ####################
+own_core 420 MLK
+remove_core 420 QAR
+
+
+
+#___________________ Tartary ____________________#
+################## Central Asia ##################
+remove_core 437 TIM
+remove_core 438 TIM
+own 440 TRS
+remove_core 440 SHY
+remove_core 441 TIM
+remove_core 442 TIM
+remove_core 453 TIM
+remove_core 454 TIM
+remove_core 457 TIM
+remove_core 458 TIM
+own_core 478 BRT
+remove_core 478 KZH
+remove_core 1967 TIM
+remove_core 1973 TIM
+remove_core 2349 TIM
+own_core 2355 BRT
+remove_core 2355 KZH
+remove_core 2356 TIM
+own_core 2360 BRT
+remove_core 2360 KZH
+remove_core 2362 TIM
+remove_core 4344 TIM
+own_core 4685 BRT
+remove_core 4685 KZH
+
+
+##################### Tibet ######################
+assimilate 2134 KSD
+remove_core 2134 KAM
+
+
+#################### Mongolia ####################
+own 701 KHA
+remove_core 701 MNG
+own 702 KHA
+remove_core 702 MNG
+own_core 709 KHA
+remove_core 709 OIR
+assimilate 714 ZUN
+remove_core 714 OIR
+own_core 716 BRT
+remove_core 716 OIR
+own_core 717 KLK
+remove_core 717 KHA
+remove_core 717 OIR
+assimilate 718 ZUN
+remove_core 718 OIR
+own_core 721 KLK
+remove_core 721 KHA
+assimilate 1065 BRT
+remove_core 1065 OIR
+own_core 1066 BRT
+remove_core 1066 OIR
+own_core 2116 KLK
+remove_core 2116 KHA
+assimilate 2118 ZUN
+remove_core 2118 OIR
+assimilate 2119 ZUN
+remove_core 2119 OIR
+own_core 2189 KLK
+remove_core 2189 OIR
+assimilate 4206 HMI
+remove_core 4206 OIR
+own_core 4219 KLK
+remove_core 4219 KHA
+own_core 4220 KLK
+remove_core 4220 KHA
+assimilate 4222 ZUN
+remove_core 4222 OIR
+own 4223 KHA
+remove_core 4223 MNG
+own_core 4666 KLK
+remove_core 4666 KHA
+own_core 4667 KLK
+remove_core 4667 KHA
+own_core 4668 KLK
+remove_core 4668 KHA
+own_core 4679 KLK
+remove_core 4679 OIR
+assimilate 4681 ZUN
+remove_core 4681 OIR
+assimilate 4682 ZUN
+remove_core 4682 OIR
+assimilate 4683 ZUN
+remove_core 4683 OIR
+assimilate 4684 ZUN
+remove_core 4684 OIR
+
+
+############### West/East Siberia ################
+assimilate 480 BRT
+remove_core 480 OIR
+own_core 1058 SOL
+remove_core 1058 KHA
+assimilate 2354 BRT
+remove_core 2354 KZH
+assimilate 2434 BRT
+remove_core 2434 OIR
+assimilate 4686 BRT
+remove_core 4686 KZH
+assimilate 4687 BRT
+remove_core 4687 OIR
+
+
+
+#___________________ Far East ___________________#
+#################### Manchuria ###################
+own_core 704 YAN
+remove_core 704 MNG
+own_core 724 SOL
+remove_core 724 KHA
+own_core 726 QIC
+remove_core 726 MNG
+own_core 2112 QIC
+remove_core 2112 MNG
+own_core 2113 QIC
+remove_core 2113 MNG
+own_core 4652 QIC
+remove_core 4652 MNG
+
+
+##################### Japan ######################
+own_core 1028 HJO
+remove_core 1028 UES
+own_core 1820 IKE
+remove_core 1820 HSK
+assimilate 1837 MAE
+remove_core 1837 HTK
+
+
+##################### Korea ######################
+# Nothing re-assigned here yet
+
+
+
+#_____________________ China ____________________#
+################### North China ##################
+remove_core 687 LNG
+own_core 2175 TNG
+remove_core 2175 LNG
+own_core 2140 LNG
+remove_core 2140 MNG
+remove_core 2140 QIC
+own_core 2141 TNG
+remove_core 2141 MNG
+own_core 2143 TNG
+remove_core 2143 MNG
+own_core 2144 TNG
+remove_core 2144 MNG
+own_core 2179 QIN
+remove_core 2179 MNG
+own_core 2181 QIN
+remove_core 2181 CSH
+own_core 4198 QIN
+remove_core 4198 CSH
+
+
+###################### Xinan #####################
+assimilate 2170 KSD
+remove_core 2170 MNG
+remove_core 2170 CXI
+
+
+################### South China ##################
+assimilate 666 CZH
+remove_core 666 MNG
+own_core 670 HUA
+remove_core 670 MNG
+own_core 698 KHA
+remove_core 698 MNG
+own_core 1840 CGS
+remove_core 1840 MNG
+assimilate 2153 MIN
+remove_core 2153 MNG
+assimilate 2156 HUA
+remove_core 2156 MIN
+own_core 2157 HUA
+remove_core 2157 MNG
+assimilate 2159 CZH
+remove_core 2159 MNG
+assimilate 2160 CZH
+remove_core 2160 MNG
+own_core 2161 CZH
+remove_core 2161 MNG
+own_core 2162 CZH
+remove_core 2162 MNG
+own_core 2163 CGS
+remove_core 2163 MNG
+own_core 2164 CGS
+remove_core 2164 MNG
+
+
+
+#____________________ India _____________________#
+##################### Bengal #####################
+# Nothing re-assigned here yet
+
+
+################### Hindustan ####################
+# Nothing re-assigned here yet
+
+
+################# Western India ##################
+assimilate 516 BDA
+remove_core 516 GUJ
+assimilate 517 BDA
+remove_core 517 GUJ
+assimilate 4430 BDA
+remove_core 4430 GUJ
+
+
+##################### Deccan #####################
+assimilate 530 JAJ
+remove_core 530 VIJ
+remove_core 530 BAH
+own_core 531 KLN
+remove_core 531 VIJ
+remove_core 531 BAH
+assimilate 2030 JAJ
+remove_core 2030 VIJ
+remove_core 2030 BAH
+assimilate 2089 JAJ
+remove_core 2089 VIJ
+remove_core 2089 BAH
+own_core 4427 KLN
+remove_core 4427 VIJ
+remove_core 4427 BAH
+assimilate 4429 JAJ
+remove_core 4429 VIJ
+remove_core 4429 BAH
+
+
+################### Coromandel ###################
+own 536 MAD
+remove_core 536 VIJ
+
+
+
+#_________________ East Indies __________________#
+##################### Burma ######################
+# Nothing re-assigned here yet
+
+
+################### Indochina ####################
+own_core 616 CGS
+remove_core 616 DAI
+
+
+#################### Malaya ######################
+# Nothing re-assigned here yet
+
+
+################### Indonesia ####################
+assimilate 624 BAN
+remove_core 624 SUN
+assimilate 625 CRB
+remove_core 625 SUN
+assimilate 626 MTR
+remove_core 626 MAJ
+assimilate 629 DMK
+remove_core 629 MAJ
+assimilate 2688 CRB
+remove_core 2688 SUN
+assimilate 2689 DMK
+remove_core 2689 MAJ
+assimilate 2690 MTR
+remove_core 2690 MAJ
+assimilate 2691 MTR
+remove_core 2691 MAJ
+assimilate 2706 LFA
+assimilate 2708 LFA
+assimilate 4791 CRB
+remove_core 4791 SUN
+assimilate 4793 DMK
+remove_core 4793 MAJ
+
+
+#################### Moluccas ####################
+# Nothing re-assigned here yet
+
+
+
+#__________________ Ocenania ____________________#
+################### Australia ####################
+own_core 4866 KUL # Spawn Kulin from uncolonized provinces
+
+
+
+#_______________ Central America _________________#
+################### California ####################
+own_core 2493 PUE # Spawn Pueblo from uncolonized provinces
+
+
+################### Carribean #####################
+change_religion TOR norse_pagan_reformed
+own_core 489 TOR # Put first to place capital
+change_religion 489 norse_pagan_reformed
+own_core 488 TOR
+change_religion 488 norse_pagan_reformed
+own_core 490 TOR
+change_religion 490 norse_pagan_reformed
+own_core 4618 TOR
+change_religion 4618 norse_pagan_reformed
+own_core 4619 TOR
+change_religion 4619 norse_pagan_reformed
+own_core 4620 TOR
+change_religion 4620 norse_pagan_reformed
+own_core 4621 TOR
+change_religion 4621 norse_pagan_reformed
+own_core 2658 TOR
+change_religion 2658 norse_pagan_reformed
+own_core 2659 TOR
+change_religion 2659 norse_pagan_reformed
+
+
+# Randomize rulers
+run Shatter1_Logic2.txt
+
+runyear 1445.01.01 Shatter2.txt
+gamespeed 2

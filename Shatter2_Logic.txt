@@ -1,0 +1,252 @@
+# Kill all units and return control of all provinces to their owners
+every_province = {
+    kill_units = { who = THIS }
+    kill_units = { who = enemy }
+    change_controller = owner
+}
+every_country = {
+    limit = { army_size = 1 navy_size = 1 }
+    every_province = { kill_units = { who = PREV } }
+}
+
+# Spawn new units for all countries based on force limit
+every_country = {
+    while = {
+        limit = { NOT = { army_size_percentage = 0.5 } }
+        capital_scope = { infantry = THIS }
+    }
+}
+every_country = {
+    limit = { num_of_total_ports = 1 }
+    while = {
+        limit = { NOT = { navy_size_percentage = 0.4 } }
+        random_owned_province = { 
+            limit = { has_port = yes }
+            transport = THIS
+            light_ship = THIS
+        }
+    }
+}
+
+# Remove all possible estate privileges (Doesn't work) (v1.31.6.0)
+# every_country = {
+#     remove_estate_privilege = estate_brahmins_land_rights
+#     remove_estate_privilege = estate_nobles_land_rights
+#     remove_estate_privilege = estate_church_land_rights
+#     remove_estate_privilege = estate_maratha_land_rights
+#     remove_estate_privilege = estate_burghers_land_rights
+#     remove_estate_privilege = estate_vaisyas_land_rights
+#     remove_estate_privilege = estate_cossacks_land_rights
+#     remove_estate_privilege = estate_nomadic_tribes_land_rights
+#     remove_estate_privilege = estate_dhimmi_land_rights
+#     remove_estate_privilege = estate_jains_land_rights
+#     remove_estate_privilege = estate_rajput_land_rights
+#     remove_estate_privilege = estate_nobles_nobility_primacy
+#     remove_estate_privilege = estate_nobles_officer_corp
+#     remove_estate_privilege = estate_nobles_levies
+#     remove_estate_privilege = estate_nobles_advisors
+#     remove_estate_privilege = estate_nobles_right_of_counsel
+#     remove_estate_privilege = estate_nobles_french_strong_duchies
+#     remove_estate_privilege = estate_church_religious_state
+#     remove_estate_privilege = estate_church_independent_inquisition
+#     remove_estate_privilege = estate_church_new_world_mission
+#     remove_estate_privilege = estate_church_papal_emissary
+#     remove_estate_privilege = estate_church_clerical_ministers
+#     remove_estate_privilege = estate_church_clerical_oversight
+#     remove_estate_privilege = estate_church_inwards_perfection
+#     remove_estate_privilege = estate_burghers_enforced_interfaith_dialogue
+#     remove_estate_privilege = estate_church_enforced_one_faith
+#     remove_estate_privilege = estate_burghers_land_of_commerce
+#     remove_estate_privilege = estate_burghers_admirals
+#     remove_estate_privilege = estate_burghers_commercial_board_of_advice
+#     remove_estate_privilege = estate_burghers_new_world_charter
+#     remove_estate_privilege = estate_burghers_indebted_to_burghers
+#     remove_estate_privilege = estate_burghers_free_enterprise
+#     remove_estate_privilege = estate_cossacks_exploration_expedition
+#     remove_estate_privilege = estate_cossacks_cossack_self_governance
+#     remove_estate_privilege = estate_cossacks_establish_the_cossack_regiments
+#     remove_estate_privilege = estate_cossacks_expand_the_cossack_regiments
+#     remove_estate_privilege = estate_dhimmi_lighter_dhimmi_taxes
+#     remove_estate_privilege = estate_dhimmi_dhimmi_nobles
+#     remove_estate_privilege = estate_dhimmi_manpower
+#     remove_estate_privilege = estate_dhimmi_tolerance
+#     remove_estate_privilege = estate_dhimmi_guaranteed_autonomy
+#     remove_estate_privilege = estate_nomadic_tribes_share_of_the_spoils
+#     remove_estate_privilege = estate_nomadic_tribes_chieftains_autonomy
+#     remove_estate_privilege = estate_nomadic_tribes_guaranteed_leadgership_in_host
+#     remove_estate_privilege = estate_nomadic_tribes_tribal_host
+#     remove_estate_privilege = estate_brahmins_brahmin_governance
+#     remove_estate_privilege = estate_brahmins_legitimacy_to_rule
+#     remove_estate_privilege = estate_brahmins_brahmin_leadership
+#     remove_estate_privilege = estate_brahmins_flexible_deities
+#     remove_estate_privilege = estate_brahmins_loyalty_privilege
+#     remove_estate_privilege = estate_brahmins_guaranteed_autonomy
+#     remove_estate_privilege = estate_jains_diplomacy
+#     remove_estate_privilege = estate_jains_clerical_class
+#     remove_estate_privilege = estate_jains_indebted_to_jains
+#     remove_estate_privilege = estate_jains_conscientious_objection
+#     remove_estate_privilege = estate_maratha_military
+#     remove_estate_privilege = estate_maratha_advisor
+#     remove_estate_privilege = estate_maratha_loyalty_privilege
+#     remove_estate_privilege = estate_maratha_levies
+#     remove_estate_privilege = estate_maratha_levies_for_muslims
+#     remove_estate_privilege = estate_maratha_special_privilege
+#     remove_estate_privilege = estate_rajput_rajput_regiments
+#     remove_estate_privilege = estate_rajput_military
+#     remove_estate_privilege = estate_rajput_advisor
+#     remove_estate_privilege = estate_rajput_loyalty_privilege
+#     remove_estate_privilege = estate_rajput_officer_corp
+#     remove_estate_privilege = estate_rajput_look_up_purbias
+#     remove_estate_privilege = estate_vaisyas_loyalty_privilege
+#     remove_estate_privilege = estate_vaisyas_advisor
+#     remove_estate_privilege = estate_vaisyas_wartaxes
+#     remove_estate_privilege = estate_burghers_patronage_of_the_arts
+#     remove_estate_privilege = estate_vaisyas_patronage_of_the_arts
+#     remove_estate_privilege = estate_nomadic_tribes_primacy_to_the_bannermen
+#     remove_estate_privilege = estate_nobles_supremacy_over_crown
+#     remove_estate_privilege = estate_brahmins_supremacy_over_crown
+#     remove_estate_privilege = estate_burghers_monopoly_of_textiles
+#     remove_estate_privilege = estate_burghers_monopoly_of_dyes
+#     remove_estate_privilege = estate_burghers_monopoly_of_glass
+#     remove_estate_privilege = estate_burghers_monopoly_of_paper
+#     remove_estate_privilege = estate_vaisyas_monopoly_of_textiles
+#     remove_estate_privilege = estate_vaisyas_monopoly_of_dyes
+#     remove_estate_privilege = estate_vaisyas_monopoly_of_glass
+#     remove_estate_privilege = estate_vaisyas_monopoly_of_paper
+#     remove_estate_privilege = estate_jains_monopoly_of_textiles
+#     remove_estate_privilege = estate_jains_monopoly_of_dyes
+#     remove_estate_privilege = estate_jains_monopoly_of_glass
+#     remove_estate_privilege = estate_jains_monopoly_of_paper
+#     remove_estate_privilege = estate_nobles_monopoly_of_metals
+#     remove_estate_privilege = estate_nobles_monopoly_of_livestock
+#     remove_estate_privilege = estate_nobles_monopoly_of_gems
+#     remove_estate_privilege = estate_rajput_monopoly_of_metals
+#     remove_estate_privilege = estate_rajput_monopoly_of_livestock
+#     remove_estate_privilege = estate_rajput_monopoly_of_gems
+#     remove_estate_privilege = estate_maratha_monopoly_of_metals
+#     remove_estate_privilege = estate_maratha_monopoly_of_livestock
+#     remove_estate_privilege = estate_maratha_monopoly_of_gems
+#     remove_estate_privilege = estate_church_monopoly_of_incense
+#     remove_estate_privilege = estate_church_monopoly_of_wool
+#     remove_estate_privilege = estate_church_monopoly_of_wine
+#     remove_estate_privilege = estate_church_monopoly_of_slaves
+#     remove_estate_privilege = estate_brahmins_monopoly_of_incense
+#     remove_estate_privilege = estate_brahmins_monopoly_of_wool
+#     remove_estate_privilege = estate_cossacks_recruit_cossack_generals
+#     remove_estate_privilege = estate_cossacks_prime_herding_rights
+#     remove_estate_privilege = estate_nobles_junker_primacy
+#     remove_estate_privilege = estate_nobles_strong_duchies
+#     remove_estate_privilege = estate_nobles_golden_liberty
+#     remove_estate_privilege = estate_nobles_nieszawa_privileges
+#     remove_estate_privilege = estate_nobles_pacta_conventa
+#     remove_estate_privilege = estate_nobles_veto_heir_apparent
+#     remove_estate_privilege = estate_burghers_the_great_privilege
+#     remove_estate_privilege = estate_burghers_exclusive_trade_rights
+#     remove_estate_privilege = estate_vaisyas_exclusive_trade_rights
+#     remove_estate_privilege = estate_jains_exclusive_trade_rights
+#     remove_estate_privilege = estate_burghers_control_over_monetary_policy
+#     remove_estate_privilege = estate_vaisyas_control_over_monetary_policy
+#     remove_estate_privilege = estate_jains_control_over_monetary_policy
+#     remove_estate_privilege = estate_burghers_private_trade_fleets
+#     remove_estate_privilege = estate_vaisyas_private_trade_fleets
+#     remove_estate_privilege = estate_jains_private_trade_fleets
+#     remove_estate_privilege = estate_church_for_the_faith
+#     remove_estate_privilege = estate_brahmins_for_the_faith
+#     remove_estate_privilege = estate_burghers_prussian_confederation
+#     remove_estate_privilege = estate_nobles_statutory_rights
+#     remove_estate_privilege = estate_burghers_statutory_rights
+#     remove_estate_privilege = estate_church_statutory_rights
+#     remove_estate_privilege = estate_brahmins_statutory_rights
+#     remove_estate_privilege = estate_church_brahmins_at_court
+#     remove_estate_privilege = estate_burghers_khmer_irrigation
+#     remove_estate_privilege = estate_vaisyas_khmer_irrigation
+#     remove_estate_privilege = estate_church_karma_temples
+#     remove_estate_privilege = estate_church_influence_temples
+#     remove_estate_privilege = estate_burghers_tropical_nation
+#     remove_estate_privilege = estate_church_lao_animism
+#     remove_estate_privilege = estate_nobles_command_of_the_military
+#     remove_estate_privilege = estate_burghers_orang_laut_alliances
+# }
+
+every_country = {
+    if = { limit = { tag = MAJ } add_stability = 3 }
+
+    # Change religion to dominant
+    change_religion = new_variable:dominant_religion
+    change_primary_culture = new_variable:dominant_culture
+    
+    add_years_of_income = 1
+
+    # Level manpower & sailors
+    while = {
+        limit = { NOT = { manpower_percentage = 0.8 }}
+        add_manpower = 1
+    }
+    while = {
+        limit = { NOT = { sailors_percentage = 0.5 }}
+        add_sailors = 1
+    }
+
+    # Level army & navy tradition
+    while = {
+        limit = { NOT = { army_tradition = 15 } }
+        add_army_tradition = 1
+    }
+    while = {
+        limit = { NOT = { navy_tradition = 10 } }
+        add_navy_tradition = 1
+    }
+
+    # Reset relations
+    every_known_country = {
+        break_union = PREV
+        remove_casus_belli = { target = PREV type = cb_restore_personal_union }
+    }
+    every_rival_country = { PREV = { remove_rival = PREV } }
+
+    # Reset Estates land share and loyalty
+    change_estate_land_share = { estate = estate_church share = -100 }
+    change_estate_land_share = { estate = estate_church share = 25 }
+    add_estate_loyalty = { estate = estate_church loyalty = -100 }
+    add_estate_loyalty = { estate = estate_church loyalty = 50 }
+    change_estate_land_share = { estate = estate_burghers share = -100 }
+    change_estate_land_share = { estate = estate_burghers share = 25 }
+    add_estate_loyalty = { estate = estate_burghers loyalty = -100 }
+    add_estate_loyalty = { estate = estate_burghers loyalty = 50 }
+    change_estate_land_share = { estate = estate_nobles share = -100 }
+    change_estate_land_share = { estate = estate_nobles share = 25 }
+    add_estate_loyalty = { estate = estate_nobles loyalty = -100 }
+    add_estate_loyalty = { estate = estate_nobles loyalty = 50 }
+    change_estate_land_share = { estate = estate_brahmins share = -100 }
+    change_estate_land_share = { estate = estate_brahmins share = 25 }
+    add_estate_loyalty = { estate = estate_brahmins loyalty = -100 }
+    add_estate_loyalty = { estate = estate_brahmins loyalty = 50 }
+    change_estate_land_share = { estate = estate_maratha share = -100 }
+    change_estate_land_share = { estate = estate_maratha share = 25 }
+    add_estate_loyalty = { estate = estate_maratha loyalty = -100 }
+    add_estate_loyalty = { estate = estate_maratha loyalty = 50 }
+    change_estate_land_share = { estate = estate_vaisyas share = -100 }
+    change_estate_land_share = { estate = estate_vaisyas share = 25 }
+    add_estate_loyalty = { estate = estate_vaisyas loyalty = -100 }
+    add_estate_loyalty = { estate = estate_vaisyas loyalty = 50 }
+    change_estate_land_share = { estate = estate_cossacks share = -100 }
+    change_estate_land_share = { estate = estate_cossacks share = 25 }
+    add_estate_loyalty = { estate = estate_cossacks loyalty = -100 }
+    add_estate_loyalty = { estate = estate_cossacks loyalty = 50 }
+    change_estate_land_share = { estate = estate_nomadic_tribes share = -100 }
+    change_estate_land_share = { estate = estate_nomadic_tribes share = 25 }
+    add_estate_loyalty = { estate = estate_nomadic_tribes loyalty = -100 }
+    add_estate_loyalty = { estate = estate_nomadic_tribes loyalty = 50 }
+    change_estate_land_share = { estate = estate_dhimmi share = -100 }
+    change_estate_land_share = { estate = estate_dhimmi share = 25 }
+    add_estate_loyalty = { estate = estate_dhimmi loyalty = -100 }
+    add_estate_loyalty = { estate = estate_dhimmi loyalty = 50 }
+    change_estate_land_share = { estate = estate_jains share = -100 }
+    change_estate_land_share = { estate = estate_jains share = 25 }
+    add_estate_loyalty = { estate = estate_jains loyalty = -100 }
+    add_estate_loyalty = { estate = estate_jains loyalty = 50 }
+    change_estate_land_share = { estate = estate_rajput share = -100 }
+    change_estate_land_share = { estate = estate_rajput share = 25 }
+    add_estate_loyalty = { estate = estate_rajput loyalty = -100 }
+    add_estate_loyalty = { estate = estate_rajput loyalty = 50 }
+}
